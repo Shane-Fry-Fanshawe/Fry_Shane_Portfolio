@@ -1,0 +1,4 @@
+###### We can ignore lots of stuff in here! ######
+
+node_modules
+.DS_Store
