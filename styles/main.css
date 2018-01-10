@@ -10,6 +10,11 @@
 	display: none;
 }
 
+.hide
+{
+	display: none;
+}
+
 .showing{
 	display: block;
 }
@@ -25,7 +30,7 @@ font-family: 'Montserrat';
 src: url('../working_files/fonts/Montserrat-Light.eot');
 src: url('../working_files/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
 url('../working_files/fonts/Montserrat-Light.woff') format('woff'),
-url('../working_files/fonts/Montserrat-Light.ttf') format('truetype'),
+url('../working_files/fonts/Montserrat-Light.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
@@ -35,7 +40,7 @@ font-family: 'BebasNeue';
 src: url('../working_files/fonts/BebasNeue.ttf') format('truetype');
 src: url('../working_files/fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
 url('../working_files/fonts/BebasNeue.woff') format('woff'),
-url('../working_files/fonts/BebasNeue.eot'),
+url('../working_files/fonts/BebasNeue.eot');
 font-weight: normal;
 font-style: normal;
 }
@@ -408,7 +413,7 @@ footer
 padding: 10px 0px 5px 0px;
 		font-size: 1.5em;
 		font-family: BebasNeue;
-		text-align: middle;
+
 }
 
 #home_container
@@ -566,7 +571,7 @@ span {
 
 input
 {
-	-webkit-appearance: none;
+
 	font-family: BebasNeue;
 	color: white;
 	background-color: #005073;
