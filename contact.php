@@ -53,7 +53,7 @@
     </div>
 
      <nav id="main-menu" class="row show-for-small-only"><!--Main Navigation-->
-         <h2 class="hide">Main Navigation</h2>
+         <h2 class="hide">Mobile Navigation</h2>
            <ul id="mainNav">
          <li class="small-12 columns"><a href="index.html">HOME</a></li>
          <li class="small-12 columns"><a href="about.html">ABOUT</a></li>
@@ -66,6 +66,7 @@
 
 
     <nav class="hide-for-small-only medium-8 medium-centered header_nav_medium columns">
+      <h2 class="hide">Desktop Navigation</h2>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <img src="images/header_logo.png" alt="OBJ logo">
@@ -91,24 +92,29 @@
 
 
 <form action="contact.php" method="post">
+  <h2 class="hidden">Contact Forum</h2>
 <div class="row">
 
   <div class="small-12 medium-4 medium-push-2 columns">
+    <h3 class="hidden">Name Input</h3>
     <input id="stop_spam" name="street" type="text" size="21" maxlength="30" />
     <input type="text" id="name" name="name" placeholder="Please enter your name...">
   </div>
   <div class="small-12 medium-4 columns medium-push-2 end">
+    <h3 class="hidden">Email Input</h3>
     <input type="text" id="email" name="email" placeholder="Please enter your email...">
   </div>
 </div>
 
 <div class="row">
+  <h3 class="hidden">Comment Input</h3>
   <div class="small-8 small-centered columns">
     <textarea id="subject" name="message" placeholder="Comment..." style="height:200px"></textarea>
   </div>
 </div>
 
 <div class="row">
+  <h3 class="hidden">Submit</h3>
   <div class="small-8 small-centered columns">
     <input type="submit" value="Submit">
   </div>
@@ -120,7 +126,6 @@
       <h2>Thank you </h2> < ?php echo $name; ? > I would get rid of those spaces*
   </div>
 </div> -->
-</form>
 
 </div>
 
@@ -128,6 +133,7 @@
 
 
 <footer>
+  <h2 class="hidden">Footer</h2>
   <div class="row">
 
     <div class="small-8 small-push-2 medium-4 medium-push-0 columns end">
@@ -139,6 +145,7 @@
       </div>
 
       <div class="footer_nav">
+        <h3 class="hidden">Footer Nav</h3>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
@@ -150,6 +157,7 @@
     </div>
 
     <div class="small-8 small-push-2 medium-3 medium-push-4 end columns copyright">
+      <h3 class="hidden">Footer Info</h3>
       <p>&copy; 2018 - Shane Fry, All Rights Reserved </p>
     </div>
 

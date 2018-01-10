@@ -5,7 +5,7 @@ $user = "root";
 $pass = ""; // for PC
 // $pass = "root"; for MAC only
 $url = "localhost"; //Usually this, but it may change to an IP adress depending on the web hoster
-$db = "db_movies";
+$db = "db_shane_fry_portfolio";
 
 
 
