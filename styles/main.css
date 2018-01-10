@@ -14,17 +14,28 @@
 	display: block;
 }
 
+#stop_spam
+{
+	display: none;
+}
+
 
 @font-face {
 font-family: 'Montserrat';
-src: url('../working_files/fonts/Montserrat-Light.ttf');
+src: url('../working_files/fonts/Montserrat-Light.eot');
+src: url('../working_files/fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+url('../working_files/fonts/Montserrat-Light.woff') format('woff'),
+url('../working_files/fonts/Montserrat-Light.ttf') format('truetype'),
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'BebasNeue';
-src: url('../working_files/fonts/BebasNeue.otf');
+src: url('../working_files/fonts/BebasNeue.ttf') format('truetype');
+src: url('../working_files/fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+url('../working_files/fonts/BebasNeue.woff') format('woff'),
+url('../working_files/fonts/BebasNeue.eot'),
 font-weight: normal;
 font-style: normal;
 }
@@ -182,10 +193,30 @@ font-style: normal;
 	background-color: #005073;
 }
 
+.specialised_title{
+	color: #1b9ad5;
+	font-family: BebasNeue;
+	font-size: 1.5em;
+	padding-top: 10px;
+}
+
+.specialised_p
+{
+	color: #1b9ad5;
+	font-family: Montserrat;
+	font-size: 0.8em;
+}
+
+.specialised_box
+{
+	padding-top: 20px;
+	text-align: center;
+}
+
 #specialised_title h2
 {
 	color: white;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-family: BebasNeue;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -196,17 +227,38 @@ font-style: normal;
 #about_more_section
 {
 	background-color: #71c7ec;
+	text-align: center;
+	padding: 10px 0px 20px 0px;
+}
+
+.about_more_button
+{
+	margin-top: 10px;
+	border: 2px solid #005073;
+	background-color: white;
+}
+
+#about_more_section h3
+{
+	font-family: BebasNeue;
+	font-size: 1.3em;
+	color: #005073;
+	padding-top: 10px;
+
 }
 
 .resume_icon
 {
 	display: block;
+	float: left;
+	margin-top: 8px;
 }
 
 
 #skills
 {
 	font-family: BebasNeue;
+	padding: 10px 0px 10px 0px;
 }
 
 .skills_text
@@ -314,7 +366,7 @@ footer
 #work_container
 {
 	height: 100vh;
-	background-color: grey;
+	background-color: white;
 }
 
 .ux_ui_image
@@ -329,6 +381,7 @@ footer
 {
 	cursor: pointer;
 	color: white;
+	padding: 10px;
 
 }
 
@@ -422,6 +475,8 @@ background-attachment: fixed;
 	font-size: 1.6em;
 	text-align: center;
 	vertical-align: middle;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 .checkout_text
@@ -460,4 +515,249 @@ background-attachment: fixed;
 	font-family: Montserrat;
 	color: white;
 	padding-bottom: 20px;
+}
+
+
+.responsive_image
+{
+	margin-bottom: 30px;
+}
+
+.ux_logo
+{
+	padding-top: 40px;
+}
+
+#fill_in
+{
+	background-color: #005073;
+	height: 100vh;
+}
+
+#contact_section
+{
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+input[type=submit]{
+	margin-bottom: 30px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	width: 100%;
+
+}
+
+
+#contact_title
+{
+	color: #005073;
+	margin-top: 20px;
+	font-family: BebasNeue;
+	font-size: 2em;
+}
+
+span {
+	color: #189ad3;
+}
+
+input
+{
+	-webkit-appearance: none;
+	font-family: BebasNeue;
+	color: white;
+	background-color: #005073;
+	text-align: center;
+	display: block;
+}
+
+input:focus {
+    color: #189ad3;
+}
+
+
+#profile_pic
+{
+
+	display: block;
+	margin: 0 auto;
+}
+
+#contact_info
+{
+	font-family: Montserrat;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+
+#video_section
+{
+	background-color: #005073;
+}
+
+#logos_title_back
+{
+	background-color: #107dac;
+}
+
+
+#graphics_title_back
+{
+	background-color: #107dac;
+}
+
+.ui_titles
+{
+	text-align: center;
+	color: white;
+	font-family: Montserrat;
+	margin: 10px 0px 10px 0px;
+}
+
+.ui_logo
+{
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.graphic_work
+{
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+
+video
+{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media only screen and (min-width: 640px) {
+	.copyright p
+	{
+		font-size: 0.8em;
+		margin-top: 30px;
+	}
+
+	.specialised_box
+	{
+		height: 300px;
+	}
+
+	#about_me_text
+	{
+		text-align: left;
+		margin-bottom: 30px;
+
+	}
+
+	#about_me_text h2
+	{
+		text-align: left;
+		font-size: 2.2em;
+		padding-top: 50px;
+	}
+
+	#about_me_text p
+	{
+
+		font-size: 0.9em;
+		text-align: left;
+
+	}
+
+}
+
+#specialised_content
+{
+	margin-top: 20px;
+}
+
+#home_page_text
+{
+	padding-top: 10%;
+	text-align: center;
+}
+
+#home_page_text h2 {
+	font-family: Montserrat;
+	color: #1b9ad5;
+	font-size: 2.5em;
+}
+
+
+#home_page_text p {
+
+	font-family: Montserrat;
+	color: black;
+	font-size: 2em;
+}
+
+@media only screen and (min-width: 830px) {
+	.copyright p
+	{
+		font-size: 1em;
+	}
+
+	#about_me_text h2
+	{
+		text-align: left;
+		font-size: 2.4em;
+		padding-top: 50px;
+	}
+
+	#about_me_text p
+	{
+		font-size: 1.1em;
+		text-align: left;
+	}
+
+	#specialised_title h2
+	{
+
+		font-size: 1.9em;
+
+	}
+
+	.footer_icon
+	{
+		width: 20px;
+		height: 20px;
+	}
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+	#home_page_text h2 {
+		font-size: 3em;
+	}
+
+
+	#home_page_text p {
+		text-align: right;
+		font-size: 2.5em;
+	}
+
+
 }
