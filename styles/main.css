@@ -3,15 +3,28 @@
 {
 	color: #fff;
 	background-color: #000;
+	margin-bottom: 20px;
+	text-align: center;
 }
 .hidden {
 	display: none;
+}
+
+.showing{
+	display: block;
 }
 
 
 @font-face {
 font-family: 'Montserrat';
 src: url('../working_files/fonts/Montserrat-Light.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'BebasNeue';
+src: url('../working_files/fonts/BebasNeue.otf');
 font-weight: normal;
 font-style: normal;
 }
@@ -39,5 +52,412 @@ font-style: normal;
 	margin: 0 auto;
 	height: 40%;
 	width: 40%;
+	padding-bottom: 20px;
+}
+
+.ux_ui_image
+{
+	min-width: 44px;
+}
+
+/* Nav */
+
+.mobile_nav_logo
+{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.title-bar{
+	background-color: white;;
+
+	padding-top: 20px;
+
+}
+
+#main-menu
+{
+	display: none;
+}
+
+#main-menu li
+{
+	display: block;
+}
+
+#mainNav
+{
+
+	text-align: center;
+	margin: 0;
+	list-style-type: none;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+#mainNav li
+{
+	border-bottom: 1px solid #005073;
+
+}
+#mainNav li a
+{
+	display: block;
+	padding: 5px 0 5px 0;
+	color: #005073;
+
+}
+#mainNav li:first-child
+{
+	border-top: 1px solid #005073;
+}
+#mainNav li:last-child
+{
+	margin-bottom: 10px;
+}
+
+#mainNav li a:hover
+{
+	color: #189ad3;
+}
+
+
+
+
+.header_nav_medium
+{
+	font-family: Montserrat;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.header_nav_medium a{
+	padding-right: 10px;
+	padding-left: 10px;
+	color: black;
+}
+
+.header_nav_medium a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+/*About Me Page */
+
+#about_mobile_logo
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#about_me_text
+{
+	text-align: center;
+}
+
+#about_me_text h2
+{
+	color: #005073;
+	font-size: 2.2em;
+	font-family: BebasNeue;
+}
+
+#about_me_text p
+{
+	color: #1b9ad5;
+	font-size: 0.9em;
+	font-family: Montserrat;
+}
+
+
+/*Specialised In Page */
+
+#specialised_title
+{
+	background-color: #005073;
+}
+
+#specialised_title h2
+{
+	color: white;
+	font-size: 1.3em;
+	font-family: BebasNeue;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*Resume/Contact Page */
+#about_more_section
+{
+	background-color: #71c7ec;
+}
+
+.resume_icon
+{
+	display: block;
+}
+
+
+#skills
+{
+	font-family: BebasNeue;
+}
+
+.skills_text
+{
+	color: white;
+	margin-left: 10px;
+}
+
+.skills_number
+{
+	margin-left: 10px;
+}
+
+
+#skills_title_div h2
+{
+	color: #005073;
+	font-size: 1.5em;
+	font-family: BebasNeue;
+}
+
+
+
+
+#html_div, #video_div
+{
+	width: 70%;
+	background-color: #71c7ec;
+	height: 20px;
+	float: left;
+}
+
+ #design_div{
+	 width: 60%;
+	 background-color: #71c7ec;
+	 height: 20px;
+	 float: left;
+ }
+
+ #javascript_div
+ {
+	 width: 65%;
+	 background-color: #71c7ec;
+	 height: 20px;
+	 float: left;
+ }
+
+
+.skills_number
+{
+	float: left;
+	color: black;
+}
+
+
+footer
+{
+	background-color: #005073;
+}
+
+.footer_nav ul {
+  list-style: none;
+	text-align: center;
+
+}
+
+.footer_nav li {
+	font-family: Montserrat;
+	display: inline;
+  font-size: 0.8em;
+	padding-right: 10px;
+	text-transform: uppercase;
+
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_nav a:hover {
+  color: #1b9ad5;
+}
+
+.footer_social
+{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+.copyright p
+{
+	font-family: BebasNeue;
+	color: white;
+	text-align: center;
+}
+
+
+
+
+/* Work Page */
+
+#work_container
+{
+	height: 100vh;
+	background-color: grey;
+}
+
+.ux_ui_image
+{
+	display: block;
+	margin: 0 auto;
+}
+
+/* UX */
+
+.fa-times
+{
+	cursor: pointer;
+	color: white;
+
+}
+
+.work_title
+{
+	cursor: pointer;
+}
+
+.work_title_box
+{
+	text-align: center;
+	font-size: 1.5em;
+	font-family: BebasNeue;
+	background-color: #005073;
+}
+
+.work_title_box:hover
+{
+	color: #71c7ec;
+
+}
+
+.work_title{
+padding: 10px 0px 5px 0px;
+		font-size: 1.5em;
+		font-family: BebasNeue;
+		text-align: middle;
+}
+
+#home_container
+{
+	background-image: url("../images/home_background.jpg");
+	width: 100%;
+	height: 100vh;
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+#odell_preview
+{
+	background-image: url("../images/odell_preview.jpg");
+	width: 100%;
+	height: 670px;
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#sweets_preview
+{
+	background-image: url("../images/sweets_preview.jpg");
+	width: 100%;
+	height: 670px;
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#lotr_preview
+{
+	background-image: url("../images/LOTR_preview.jpg");
+	width: 100%;
+	height: 670px;
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.vertical-align
+{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.check_it_out_box
+{
+	background-color: white;
+	font-family: BebasNeue;
+	color: #005073;
+	font-size: 1.6em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.checkout_text
+{
+	padding-top: 15px;
+}
+
+#odell_info
+{
+	display: none;
+	background-color: #005073;
+}
+
+#lotr_info
+{
+	display: none;
+	background-color: #005073;
+}
+
+#sweets_info
+{
+	display: none;
+	background-color: #14748c;
+}
+
+
+
+.ux_section_title
+{
+	font-family: BebasNeue;
+	color: white;
+}
+
+.ux_section_p
+{
+	font-family: Montserrat;
+	color: white;
 	padding-bottom: 20px;
 }
