@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/minified/TweenMax.min.js"></script>
   </head>
-  <body>
+  <body onload="loadData();">
     <h1 class="hidden">Shane Fry - UI Work</h1>
 
 
@@ -65,7 +65,7 @@
 <div class="row">
   <h3 class="hidden">Main Video</h3>
   <div class="small-10 small-centered columns">
-    <video controls poster="images/demo_reel.jpg">
+    <video poster="images/demo_reel.jpg">
         <source src="videos/test.mp4" type="video/mp4">
     <!--    <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
@@ -73,6 +73,17 @@
 IM NOT SURE HOW THE AJAX LINKING OF THE VIDEOS WORKS SO IM LEAVING IT BLANK AS OF NOW LEAVING THE FALL BACKS TO SHOW I WOULD DO IT, TREVOR SAID HIS PART ISNT DUE TILL I PRESENT SO THE AJAX ISNT FINISHED YET.
       -->
 </video>
+
+<div class="video_control_bar">
+  <img class="play-pause" src="images/play.svg" alt="play and pause button" width="20" height="20">
+  <img class="restart-button" src="images/restart.svg" alt="restart button" width="20" height="20">
+  <img class="volume-button" src="images/volume.svg" alt="volume button" width="20" height="20">
+  <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+  <img class="fullscreen-button" src="images/fullscreen.svg" alt="restart button" width="20" height="20">
+  <p><span id="video-timer"></span></p>
+  <progress id="progress-bar" value="0" max="100"> </progress>
+</div>
+
   </div>
 </div>
 
@@ -113,18 +124,32 @@ IM NOT SURE HOW THE AJAX LINKING OF THE VIDEOS WORKS SO IM LEAVING IT BLANK AS O
 </div>
 
 
-<div class="row">
-  <div class="small-12 small-centered medium-6 columns">
-    <h3 class="hidden">Main Logo</h3>
-    <img class="ui_logo" src="images/k2f.png" alt="kicks 2 find logo" width="200" height="200">
+
+
+<div id="lightbox">
+  <div class="small-10 small-centered columns">
+    <i class="fa fa-times close-lightbox"> </i>
+    <h2 class="lightboxTitle">Gallery!</h2>
+    <img src="" alt="large preview image" class="Lightbox-img">
   </div>
+
+
+
+
 </div>
 
-<div class="row">
-  <div class="small-12 medium-3 columns ">
+
+
+<div class="row" id="logo1">
+
+</div>
+
+<div class="row logosdiv" id="logotest">
+ <!-- <div class="small-12 medium-3 columns clone">
     <h3 class="hidden">Sub Logo 1</h3>
     <img class="ui_logo" src="images/obj_logo.png" alt="OBJ logo">
   </div>
+    <h1 class="request-state"></h1>
   <div class="small-12 medium-3 columns">
     <h3 class="hidden">Sub Logo 2</h3>
     <img class="ui_logo" src="images/lori_designs.png" alt="lori designs logo">
@@ -136,7 +161,7 @@ IM NOT SURE HOW THE AJAX LINKING OF THE VIDEOS WORKS SO IM LEAVING IT BLANK AS O
   <div class="small-12 medium-3 columns">
     <h3 class="hidden">Sub Logo 4</h3>
     <img class="ui_logo" src="images/sweets_logo.png" alt="shanes sweets logo">
-  </div>
+  </div>-->
 </div>
 
 <div id="graphics_title_back">
@@ -208,5 +233,11 @@ IM NOT SURE HOW THE AJAX LINKING OF THE VIDEOS WORKS SO IM LEAVING IT BLANK AS O
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/prod/production.min.js"></script>
+    <script src="js/modules/module_ajax.js"></script>
+    <script src="js/modules/modules_lightbox.js"></script>
+    <script src="js/modules/modules_video_controls.js"></script>
+    <script src="js/main.js"></script>
+
+
   </body>
 </html>
